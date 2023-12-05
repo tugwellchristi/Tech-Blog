@@ -13,7 +13,7 @@ This application is a CMS-style blog site created by a web developer with the in
 - [Resources](#resources)
 
 ## Usage
-The user will go through the authenication process and can then navigate through blog posts, articles and can enter, save, and delete their content. 
+From the application homepage, the user will go through the authenication process and can then navigate through blog posts, articles and can enter, save, and delete their content. 
 
 # Contributing 
 To get involved, reference the [Contributing Guide](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) to contribute to this project.  
