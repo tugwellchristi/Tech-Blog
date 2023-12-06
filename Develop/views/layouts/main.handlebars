@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Develop/public/style.css">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Tech Blog</title>
 </head>
+
 <body>
-    <header class="display-flex justify-space-between align-center p-2">
-    <h1>
-      User Interface
-    </h1>
-  </header>
-  <main class="container container-fluid mt-5">
-    <!-- Render the contents of the sub layout here -->
-    {{{ body }}}
-  </main>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand active" href="#">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    {{#if loggedIn}}
+                    <li><button id="logoutBtn" class="btn-no-style">Logout</button></li>
+                    <li><a href="#" class="dashboardBtn">Dashboard</li>
+                    {{ else}}
+                    <li><a href="#" class="loginBtn">Login</a></li>
+                </ul>
+            </div>
+            <div class="jumbotron">
+                <h1 class="h1">DEV BLOG</h1>
+                <p>Join your fellow developers and designers to share thoughts and publications about front end
+                    development and UX/UI. </p>
+            </div>
+        </nav>
+    </div>
+    <main class="container container-fluid mt-5">
+        <!-- Render the contents of the sub layout here -->
+        <!-- {{{ body }}} -->
+    </main>
 </body>
+
 </html>

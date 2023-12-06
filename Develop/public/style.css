@@ -1,0 +1,25 @@
+
+.navbar {
+    margin-top: 10px;
+} 
+
+.navbar-brand {
+    margin-top: 8px;
+    font-weight: bold;
+}
+.jumbotron {
+    margin: 10px;
+}
+
+.loginBtn, .dashboardBtn {
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.btn-dark {
+    background-color: black;
+    color: lightgrey;
+    border-radius: 8px;
+}
