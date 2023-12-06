@@ -24,7 +24,7 @@ View the application [here.](project link)
 ## Contact
 Contact me at the following: 
 - GitHub username: [tugwellchristi](https://github.com/tugwellchristi/README.md-Generator)
-- Email address: [tugwellchristi@gmail.com](mailto:tugwellchristi@gmail.com)
+- username address: [tugwellchristi@gmail.com](mailto:tugwellchristi@gmail.com)
 
 ## License 
 This project is covered with the [MIT](https://opensource.org/license/MIT/) license.
