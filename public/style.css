@@ -1,4 +1,12 @@
 
+body {
+    background-image: url('/public/assets/texture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .navbar {
     margin-top: 10px;
 } 
@@ -17,12 +25,14 @@
     margin-top: 12px;
     margin-left: 20px;
     border-radius: 8px;
+    font-weight: bold;
 }
 
 .btn-dark {
     background-color: black;
     color: lightgrey;
     border-radius: 8px;
+    font-weight: bold;
 }
 
 .signUpBtn, .loginBtn2 {
@@ -30,4 +40,20 @@
     color: white;
     padding: 8px 15px;
     border-radius: 8px;
+    font-weight: bold;
+}
+
+.blogBox {
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.submitPostBtn, .deleteBtn {
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
 }
