@@ -36,8 +36,8 @@ body {
 }
 
 .signUpBtn, .loginBtn2 {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 8px 15px;
     border-radius: 8px;
     font-weight: bold;

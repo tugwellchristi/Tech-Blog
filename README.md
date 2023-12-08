@@ -19,7 +19,13 @@ From the application homepage, the user will go through the authenication proces
 To get involved, reference the [Contributing Guide](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) to contribute to this project.  
 
 ## Demo 
-View the application [here.](project link)
+Coming Soon: View the deployed application [here.](project link)
+Sneak Preview: Initial Screenshots 
+
+![Screen Shot 2023-12-08 at 2 08 17 PM](https://github.com/tugwellchristi/Tech-Blog/assets/90078824/498fc7c4-20a8-40aa-b591-f3345dd6bc19)
+
+![Screen Shot 2023-12-08 at 2 04 42 PM](https://github.com/tugwellchristi/Tech-Blog/assets/90078824/9c37e67e-1aa6-4171-86d1-400f1d87fe8f)
+
 
 ## Contact
 Contact me at the following: 
