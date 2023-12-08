@@ -20,10 +20,10 @@
                 </div>
                 <ul class="nav navbar-nav">
                     {{#if loggedIn}}
-                    <li><button id="logoutBtn" class="btn-no-style">Logout</button></li>
+                    <li><button user_id="logoutBtn" class="btn-no-style">Logout</button></li>
                     <li><a href="#" class="dashboardBtn">Dashboard</li>
                     {{ else}}
-                    <li><a href="#" class="loginBtn">Login</a></li>
+                    <li><a href="/views/login.handlebars" class="loginBtn">Login</a></li>
                 </ul>
             </div>
             <div class="jumbotron">
@@ -35,8 +35,13 @@
     </div>
     <main class="container container-fluid mt-5">
         <!-- Render the contents of the sub layout here -->
-        <!-- {{{ body }}} -->
+            {{{ body }}} 
     </main>
+
+        <!-- Render the contents of the sub layout here -->
+        {{#if logged_in}}
+        <script src="/public/js/logout.js"></script>
+        {{/if}}
 </body>
 
 </html>

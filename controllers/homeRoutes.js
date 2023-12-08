@@ -1,4 +1,5 @@
-const router = require('express');
+const express = require('express');
+const router = express.Router();
 const { BlogPost, User } = require('../models');
 const sequelize = require('../config/connection');
 const withAuth = require('../utils/auth')
@@ -8,7 +9,7 @@ router.get('/', async (req, res) => {
         // Get all projects and JOIN with user data
         const blogPostData = await BlogPost.findAll({
             attributes: [
-                'id',
+                'user_id',
                 'post_topic',
                 'post_content',
                 'post_comment',
@@ -35,11 +36,11 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/blogPost/:id', async (req, res) => {
+router.get('/blogPost/:user_id', async (req, res) => {
     try {
-        const blogPostData = await BlogPost.findByPk(req.params.id, {
+        const blogPostData = await BlogPost.findByPk(req.params.user_id, {
             attributes: [
-                'id',
+                'user_id',
                 'post_topic',
                 'post_content',
                 'post_comment',
@@ -66,9 +67,9 @@ router.get('/blogPost/:id', async (req, res) => {
 
 router.get('/profile', withAuth, async (req, res) => {
     try {
-        // Find the logged in user based on session ID
+        // Find the logged in user based on session user_id
         const userData = await User.findByPk(req.session.user_id, {
-            attributes: { exclude: ['password']},
+            attributes: { exclude: ['password'] },
             include: [{ model: BlogPost }],
         });
 

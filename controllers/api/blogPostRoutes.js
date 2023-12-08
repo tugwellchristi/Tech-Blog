@@ -15,17 +15,17 @@ router.post('/', withAuth, async (req, res) => {
     }
 });
 
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete('/:user_id', withAuth, async (req, res) => {
     try {
         const blogPost = await BlogPost.destroy({
             where: {
-                id: req.params.id,
+                user_id: req.params.user_id,
                 user_id: req.session.user_id,
             },
         });
 
         if (!blogPostData) {
-            res.status(404).json({ message: 'No blog post found with this id.'});
+            res.status(404).json({ message: 'No blog post found with this user_id.' });
             return;
         }
 

@@ -9,11 +9,12 @@
 }
 .jumbotron {
     margin: 10px;
+    border-radius: 8px;
 }
 
 .loginBtn, .dashboardBtn {
-    padding: 5px;
-    margin-top: 15px;
+    padding: 8px 15px;
+    margin-top: 12px;
     margin-left: 20px;
     border-radius: 8px;
 }
@@ -21,5 +22,12 @@
 .btn-dark {
     background-color: black;
     color: lightgrey;
+    border-radius: 8px;
+}
+
+.signUpBtn, .loginBtn2 {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
     border-radius: 8px;
 }
