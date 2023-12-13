@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -31,10 +31,12 @@
         </nav>
     </div>
     <main class="blogBox container container-fluid mt-6">
-     Render the contents of the sub layout here -->
+    <!-- Render the contents of the sub layout here -->
         <!-- {{{ body }}} -->
-       
-<!-- <div class="row">
+
+        
+ <!-- LOGIN & SIGN UP TEST -->      
+  <!--<div class="row">
     <div class="col-md-6">
         <div class="login-card">
             <h2 class="page-title">Login</h2>
@@ -70,9 +72,46 @@
             </div>
         </form>
     </div>
-</div>
-<script src="/public/js/login.js"></script>
+</div> -->
+
+
+<!-- DASHBOARD, LOGGED IN VIEW-->
+<!-- <div class="row mt-4">
+    <div class="col-md-6 blogPost-list">
+        <h3>Current Blog Posts:</h3>
+
+        {{#each blogPosts as |blogPost|}}
+        <div class="row mb-2">
+            <div class="col-md-8 submittedPosts">
+                <h4><a href="/views/dashboard.handlebars/{{blogPost-topic.id}}">{{blogPost-topic.name}}</a></h4>
+            </div>
+            <div class="col-md-4">
+                <button class="deleteBtn" data-id="{{blogPost-topic.id}}">Delete</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+
+    <div class="col-md-6">
+        <h3>Create a New Blog Post</h3>
+        <form class="form newBlogPost-form">
+            <div class="form-group">
+                <label for="blogPost-topic">Post Topic:</label><br />
+                <input class="form-input" type="text" id="blogPost-topic" name="blogPost-topic" />
+            </div>
+            <div class="form-group">
+                <label for="blogPost-content">Post Content:</label>
+                <textarea class="form-control" rows="10" id="blogPost-content" name="blogPost-content"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submitPostBtn">Submit Post</button>
+            </div>
+        </form>
+    </div>
+</div> -->
+ <script src="/public/js/login.js"></script>
     </main>
 </body>
 
-</html>  --> 
+</html>    

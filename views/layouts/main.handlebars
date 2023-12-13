@@ -23,7 +23,9 @@
                     <li><button user_id="logoutBtn" class="btn-no-style">Logout</button></li>
                     <li><a href="#" class="dashboardBtn">Dashboard</li>
                     {{ else}}
-                    <li><a href="/views/login.handlebars" class="loginBtn">Login</a></li>
+                    <li><a href="/login" class="loginBtn">Login</a></li>
+                    <script src="/js/login.js"></script>
+                    {{/if}}
                 </ul>
             </div>
             <div class="jumbotron">
@@ -33,15 +35,51 @@
             </div>
         </nav>
     </div>
-    <main class="container container-fluid mt-5">
+    <main class="container homepage container-fluid mt-5">
         <!-- Render the contents of the sub layout here -->
-            {{{ body }}} 
+        {{!-- {{#if blogPost.length}}
+        <div class="row mt-4">
+            <div class="col-md-6 blogPost-list">
+                <h3>Current Blog Posts:</h3>
+
+                {{#each blogPosts as |blogPost|}}
+                <div class="row mb-2">
+                    <div class="col-md-8">
+                        <h4><a href="/views/dashboard.handlebars/{{blogPost-topic.id}}">{{blogPost-topic.name}}</a></h4>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="deleteBtn" data-id="{{blogPost-topic.id}}">Delete</button>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/if}} --}}
+        {{{ body }}}
     </main>
 
-        <!-- Render the contents of the sub layout here -->
-        {{#if logged_in}}
-        <script src="/public/js/logout.js"></script>
-        {{/if}}
+    <!-- Render the contents of the sub layout here -->
+    {{#if logged_in}}
+    <script src="/public/js/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
+
+
+
+{{!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>MY TECH BLOG</h1>
+</body>
+
+</html> --}}

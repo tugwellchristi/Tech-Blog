@@ -57,3 +57,7 @@ body {
     border-radius: 8px;
     font-weight: bold;
 }
+
+.submittedPosts {
+    color: white;
+}
