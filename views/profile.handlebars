@@ -26,7 +26,7 @@
                 <h4><a href="/views/dashboard.handlebars/{{blogPost-topic.id}}">{{blogPost-topic.name}}</a></h4>
             </div>
             <div class="col-md-4">
-                <button class="deleteBtn" data-id="{{blogPost-topic.id}}">Delete</button>
+                <button class="deleteBtn" id="{{blogPost-topic.id}}">Delete</button>
             </div>
         </div>
         {{/each}}
@@ -34,4 +34,4 @@
     {{/if}}
 </div>
 
-<script src="/public/js/profile.js"></script>
+<script src="/js/profile.js"></script>

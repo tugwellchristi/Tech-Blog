@@ -1,3 +1,5 @@
+console.log('christi');
+
 const loginFormHandler = async (event) => {
     event.preventDefault();
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Develop/public/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -20,12 +20,12 @@
                 </div>
                 <ul class="nav navbar-nav">
                     {{#if loggedIn}}
-                    <li><button user_id="logoutBtn" class="btn-no-style">Logout</button></li>
-                    <li><a href="#" class="dashboardBtn">Dashboard</li>
+                    <li><button id="logoutBtn" class="btn-no-style">Logout</button></li>
                     {{ else}}
                     <li><a href="/login" class="loginBtn">Login</a></li>
                     <script src="/js/login.js"></script>
                     {{/if}}
+                    <li><a href="#" class="dashboardBtn">Dashboard</li>
                 </ul>
             </div>
             <div class="jumbotron">
@@ -37,49 +37,13 @@
     </div>
     <main class="container homepage container-fluid mt-5">
         <!-- Render the contents of the sub layout here -->
-        {{!-- {{#if blogPost.length}}
-        <div class="row mt-4">
-            <div class="col-md-6 blogPost-list">
-                <h3>Current Blog Posts:</h3>
-
-                {{#each blogPosts as |blogPost|}}
-                <div class="row mb-2">
-                    <div class="col-md-8">
-                        <h4><a href="/views/dashboard.handlebars/{{blogPost-topic.id}}">{{blogPost-topic.name}}</a></h4>
-                    </div>
-                    <div class="col-md-4">
-                        <button class="deleteBtn" data-id="{{blogPost-topic.id}}">Delete</button>
-                    </div>
-                </div>
-                {{/each}}
-            </div>
-        </div>
-        {{/if}} --}}
         {{{ body }}}
     </main>
 
     <!-- Render the contents of the sub layout here -->
-    {{#if logged_in}}
-    <script src="/public/js/logout.js"></script>
-    {{/if}}
+    {{!-- {{#if logged_in}} --}}
+    <script src="/js/logout.js"></script>
+    {{!-- {{/if}} --}}
 </body>
 
 </html>
-
-
-
-{{!--
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>MY TECH BLOG</h1>
-</body>
-
-</html> --}}

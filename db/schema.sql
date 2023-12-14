@@ -9,5 +9,5 @@ CREATE TABLE blogPosts (
     post_topic VARCHAR(255) NOT NULL,
     post_content VARCHAR(255) NOT NULL,
     post_comment VARCHAR(255) NOT NULL,
-    date_created DATETIME NOT NULL,
+    date_created DATETIME NOT NULL
 ) ;
